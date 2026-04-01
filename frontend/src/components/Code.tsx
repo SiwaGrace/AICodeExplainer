@@ -44,7 +44,7 @@ const EXPLANATION_MODES = [
   },
 ];
 
-const CodeExplainer = () => {
+const Code = () => {
   const [code, setCode] = useState("");
   const [language, setLanguage] = useState("Auto Detect");
   const [mode, setMode] = useState("explain");
@@ -478,4 +478,4 @@ const CodeExplainer = () => {
   );
 };
 
-export default CodeExplainer;
+export default Code;

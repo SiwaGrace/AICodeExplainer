@@ -1,4 +1,4 @@
-import CodeExplainer from "./components/CodeExplainer";
+import CodeExplainer from "./components/Code";
 
 const App = () => {
   return (
