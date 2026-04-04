@@ -14,7 +14,7 @@ const cors = require("cors");
 const allowedOrigins = [
   "http://localhost:5173",
   "http://127.0.0.1:5173",
-  "https://ai-code-explainer-snowy.vercel.app/",
+  "https://ai-code-explainer-snowy.vercel.app",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.post("/api/codeexplain", async (req, res) => {
+app.post("/api/codeexplainer", async (req, res) => {
   const { code, mode = "explain", language = "javascript" } = req.body;
 
   // Validate required fields
