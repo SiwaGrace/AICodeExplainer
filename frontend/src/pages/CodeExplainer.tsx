@@ -23,7 +23,7 @@ const CodeExplainer = () => {
     setExplanation("");
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/codeexplain",
+        `${import.meta.env.VITE_API_URL}/api/codeexplainer`,
         {
           code,
           mode,
