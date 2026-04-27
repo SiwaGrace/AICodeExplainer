@@ -60,7 +60,7 @@ const Code = () => {
     // Simulate API delay for UI demo
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/codeexplain`,
+        `${import.meta.env.VITE_API_URL}/api/codeexplainer`,
         {
           code: code,
           mode: mode,
